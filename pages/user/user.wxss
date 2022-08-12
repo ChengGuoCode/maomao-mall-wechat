@@ -1,0 +1,14 @@
+/* pages/user/user.wxss */
+page {
+  height: 100%;
+}
+.user_container {
+  background-color: lightpink;
+  height: 100%;
+}
+.applet_version {
+  font-size: 11px;
+  color: gray;
+  width: 100%;
+  text-align: center;
+}

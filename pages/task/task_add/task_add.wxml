@@ -1,0 +1,62 @@
+<!--components/task_add/task_add.wxml-->
+<form bindsubmit="formSubmit">
+  <view class="baseInfo">
+    <text>任务信息</text>
+  </view>
+  <view class="baseInfolist">
+    <view class="name">
+      <text>任务名称</text>
+      <input name="name" type="text" placeholder-style="font-size:16px" placeholder="请输入任务名称" />
+    </view>
+    <view class="type">
+      <text>任务类型</text>
+      <radio-group name="rewardStrategy" class="typeGroup" bindchange="changeRewardStrategy">
+        <radio value="0" checked="{{rewardStrategy === '0' ? true : false}}">每日任务</radio>
+        <radio value="1" checked="{{rewardStrategy === '1' ? true : false}}">积分任务</radio>
+      </radio-group>
+    </view>
+    <view class="limitType" wx:if="{{rewardStrategy === '0'}}">
+      <text>限制完成次数</text>
+      <radio-group name="limitType" class="limitTypeGroup" bindchange="changeLimitType">
+        <radio value="0" checked="{{limitType === 0}}">不限</radio>
+        <radio value="1" checked="{{limitType === 1}}">
+          <view class="limitTimes">
+            限制次数：<input name="limitTimes" value="{{limitTimes}}" placeholder-style="font-size:16px" placeholder="请输入限制次数" />
+          </view>
+        </radio>
+      </radio-group>
+    </view>
+    <view class="taskTime">
+      <text>任务有效期</text>
+      <radio-group name="taskTimeType" class="taskTimeGroup" bindchange="changeTaskTimeType">
+        <radio value="0" checked="{{taskTimeType === 0}}">不限</radio>
+        <radio value="1" checked="{{taskTimeType === 1}}">
+          <picker name="startTime" mode="date" value="{{startTime}}" bindchange="changeStartTime">
+            开始日期：{{startTime}}
+          </picker>
+          <picker name="endTime" mode="date" value="{{endTime}}" bindchange="changeEndTime">
+            结束日期：{{endTime}}
+          </picker>
+        </radio>
+      </radio-group>
+    </view>
+  </view>
+  <view class="strategy">
+    <text>任务策略配置</text>
+  </view>
+  <view class="strategyList">
+    <view class="conditionDesc">
+      <text>完成条件</text>
+      <input name="conditionDesc" type="text" placeholder-style="font-size:14px" placeholder="例：跳绳3000次" />
+    </view>
+    <view class="conditionVal">
+      <text>完成条件值</text>
+      <input name="conditionVal" type="text" placeholder-style="font-size:14px" placeholder="例：3000" />
+    </view>
+    <view class="rewardPoint">
+      <text>奖励积分</text>
+      <input name="rewardPoint" type="text" placeholder-style="font-size:14px" placeholder="请输入奖励积分" />
+    </view>
+  </view>
+  <button form-type='submit'>保存</button>
+</form>

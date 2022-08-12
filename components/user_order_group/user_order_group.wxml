@@ -1,0 +1,29 @@
+<!--components/user_order_group/user_order_group.wxml-->
+<view class="user_order_container">
+  <view class="user_order_header">
+    <text class="user_order_text">我的订单</text>
+    <text class="user_order_skip">全部订单 ></text>
+  </view>
+  <view class="user_order_type_container">
+    <view class="user_order_type_item">
+      <label class="fa fa-credit-card"></label>
+      <text class="user_order_item_text">待付款</text>
+    </view>
+    <view class="user_order_type_item">
+      <label class="fa fa-truck"></label>
+      <text class="user_order_item_text">待发货</text>
+    </view>
+    <view class="user_order_type_item">
+      <label class="fa fa-archive"></label>
+      <text class="user_order_item_text">待收货</text>
+    </view>
+    <view class="user_order_type_item">
+      <label class="fa fa-commenting-o"></label>
+      <text class="user_order_item_text">待评价</text>
+    </view>
+    <view class="user_order_type_item">
+      <label class="fa fa-gg"></label>
+      <text class="user_order_item_text">退款/售后</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<!--components/goods_list/goods_list.wxml-->
+<view class="goods_list">
+  <view class="goods_list_item" wx:for="{{goodsList}}" wx:key="id">
+    <goods_card data="{{item}}"></goods_card>
+  </view>
+</view>

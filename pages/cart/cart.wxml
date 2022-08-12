@@ -1,0 +1,11 @@
+<!--pages/cart/cart.wxml-->
+<view>
+  <view wx:if="{{cartGroupSize !== 0}}">
+    <view class="cart_store" wx:for="{{cartGroupData}}" wx:key="storeId">
+      <cart_group storeGoods="{{item}}" bind:amountChange="amountChange"></cart_group>
+    </view>
+    <view class="empty_space"></view>
+    <cart_bar class="cart_bar" amount="{{amount}}" goodsNum="{{goodsNum}}" bind:settle="settle"></cart_bar>
+  </view>
+  <view wx:else="{{cartGroupSize === 0}}">购物车暂无商品，快去商城逛逛吧~</view>
+</view>

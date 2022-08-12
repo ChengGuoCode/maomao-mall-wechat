@@ -1,0 +1,8 @@
+<!--components/cart_bar/cart_bar.wxml-->
+<view class="cart_bar">
+  <label class="fa fa-square-o icon_cart_bar_choose"></label>
+  <text class="cart_select_all">全选</text>
+  <text class="cart_cash_total">总计：</text><text class="cart_cash">￥{{amount}}</text>
+  <view class="settlement_button" bindtap="settle">去结算({{goodsNum}})</view>
+  <view class="fill_holder"></view>
+</view>

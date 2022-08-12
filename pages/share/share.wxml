@@ -1,0 +1,7 @@
+<!--pages/share/share.wxml-->
+<view class="share_container">
+  <view class="share_tabs">
+    <tabs tabs="{{tabList}}" isScrollX="true"></tabs>
+  </view>
+  <goods_img_text imgTextData="{{goodsImgTextData}}"></goods_img_text>
+</view>

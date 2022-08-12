@@ -1,0 +1,2 @@
+<!--components/self_icon/self_icon.wxml-->
+<view class="{{iconType}} icon_position"></view>

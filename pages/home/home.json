@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "m_search":"/components/m_search/m_search",
+    "tabs":"/components/tabs/tabs",
+    "goods_list":"/components/goods_list/goods_list"
+  },
+  "navigationBarTitleText": "首页"
+}

@@ -1,0 +1,12 @@
+<!--components/task_items/task_items.wxml-->
+<view wx:for="{{taskList}}" wx:key="id">
+  <view class="task_item">
+    <view class="task_item_name">{{item.name}}(<text class="task_item_condition_desc">{{item.conditionDesc}}</text>)</view>
+    <view class="task_item_point" wx:if="{{item.rewardType === 0 || item.rewardType === 2}}">+{{item.rewardPoint / 100}}</view>
+    <view class="task_item_goods" wx:if="{{item.rewardType === 1 || item.rewardType === 2}}">goods icon</view>
+    <view class="task_item_progress" wx:if="{{item.taskStatus === 0}}">{{item.progress}}</view>
+    <view class="task_item_edit" wx:if="{{item.taskStatus === 0}}" bindtap="completeTask" data-id="{{item}}">完成</view>
+    <view class="task_item_complete" wx:if="{{item.taskStatus === 1}}">已完成</view>
+  </view>
+</view>
+

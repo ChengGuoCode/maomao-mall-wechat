@@ -1,0 +1,37 @@
+/* components/user_order_group/user_order_group.wxss */
+@import '../../style/fontawesome.wxss';
+@import '../../style/stylesheet.wxss';
+.user_order_container {
+  border-radius: 6px;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+}
+.user_order_header {
+  display: flex;
+  justify-content: space-between;
+}
+.user_order_text {
+  font-size: 13px;
+  font-weight: bold;
+}
+.user_order_skip {
+  font-size: 11px;
+  color: gray;
+}
+.user_order_type_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0px;
+}
+.user_order_type_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.user_order_item_text {
+  font-size: 14px;
+  color: gray;
+  margin-top: 6px;
+}

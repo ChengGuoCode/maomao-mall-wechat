@@ -1,0 +1,7 @@
+<!--pages/user/user.wxml-->
+<view class="user_container">
+  <user_card userInfo="{{userInfo}}"></user_card>
+  <user_order_group orderInfo="{{userOrderInfo}}"></user_order_group>
+  <user_items userItems="{{userItems}}"></user_items>
+  <view class="applet_version">当前版本 dev</view>
+</view>

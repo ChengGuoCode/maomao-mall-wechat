@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "user_card":"../../components/user_card/user_card",
+    "user_order_group":"../../components/user_order_group/user_order_group",
+    "user_items":"../../components/user_items/user_items"
+  }
+}

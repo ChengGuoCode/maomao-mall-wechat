@@ -1,0 +1,7 @@
+<!--components/user_items/user_items.wxml-->
+<view class="user_items_container">
+  <view class="user_items_item" wx:for="{{userItems}}" wx:key="id">
+    <text class="user_items_item_name">{{item.name}}</text>
+    <text class="user_items_item_skip"><text wx:if="{{item.num !== null}}">{{item.num / 100}}</text> ></text>
+  </view>
+</view>

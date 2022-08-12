@@ -1,0 +1,48 @@
+/* pages/task/task.wxss */
+@import '../../style/fontawesome.wxss';
+@import '../../style/stylesheet.wxss';
+Page {
+  height: 100%;
+}
+.task_container {
+  padding: 8px;
+  background-color: rgb(238, 238, 238);
+  height: 100%;
+}
+.task_add {
+  position: fixed;
+  bottom: 60px;
+  left: 43%;
+  font-size: 45px;
+  color: green;
+}
+.task_tab {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(238, 238, 238);
+  height: 95%;
+  border-radius: 15px;
+}
+.task_tab_active {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgb(202, 232, 250);
+  width: 50%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task_tab_inactive {
+  background-color: rgb(238, 238, 238);
+  width: 50%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task_content {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(202, 232, 250);
+}

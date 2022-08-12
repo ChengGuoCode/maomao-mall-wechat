@@ -1,0 +1,42 @@
+/* components/task_add/task_add.wxss */
+.baseInfo {
+  padding: 10px 5px;
+  font-size: 18px;
+  background-color: #e0e0e0;
+}
+.baseInfolist {
+  font-size: 18px;
+}
+.name,.conditionDesc,.conditionVal,.rewardPoint {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 10px 5px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.type,.limitType,.taskTime {
+  padding: 10px 5px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.typeGroup,.taskTimeGroup,.strategyList,.limitTypeGroup {
+  font-size: 16px;
+}
+.limitTimes {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 10px 5px;
+}
+.strategy {
+  padding: 10px 5px;
+  font-size: 16px;
+  background-color: #e0e0e0;
+}
+.name input,.conditionDesc input,.conditionVal input,.rewardPoint input {
+  text-align: right;
+}
+.typeGroup radio,.limitTypeGroup radio,.taskTimeGroup radio {
+ margin: 5px
+}

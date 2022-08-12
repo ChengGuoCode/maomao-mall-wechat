@@ -1,0 +1,12 @@
+<!--components/user_card/user_card.wxml-->
+<view class="user_card_container">
+  <view class="user_card_portrait">
+    <image src="{{userInfo.portraitUrl}}"></image>
+  </view>
+  <view wx:if="{{userInfo !== null}}">
+    <text class="user_card_loginInfo">{{userInfo.username}}</text>
+  </view>
+  <view wx:else="{{userInfo === null}}">
+    <text>登录/注册 ></text>
+  </view>
+</view>

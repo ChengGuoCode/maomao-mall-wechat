@@ -1,0 +1,11 @@
+/* pages/share/share.wxss */
+.share_container {
+  background-color: rgb(238, 238, 238);
+}
+.share_tabs {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  height: 26px;
+  margin-bottom: 13px;
+}

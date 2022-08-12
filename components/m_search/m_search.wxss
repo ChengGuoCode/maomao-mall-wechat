@@ -1,0 +1,29 @@
+/* components/search.wxss */
+/**搜索框**/
+.input_search_bar {
+  margin: 10px 0px;
+}
+.input_search_bar_frame {
+  background-color: #F3F3F3;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+.input_search_bar_input {
+  float: left;
+  font-size: 12px;
+  width: 80%;
+}
+.input_search_bar_icon {
+  float: left;
+  margin: 0px 6px;
+}
+.input_search_bar_clear {
+  float: left;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

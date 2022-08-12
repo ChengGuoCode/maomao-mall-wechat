@@ -1,0 +1,19 @@
+/* components/user_card/user_card.wxss */
+.user_card_container {
+  display: flex;
+  align-items: center;
+}
+.user_card_portrait {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin: 22px 12px;
+}
+.user_card_portrait image {
+  width: 100%;
+  height: 100%;
+}
+.user_card_loginInfo {
+  font-size: 20px;
+}

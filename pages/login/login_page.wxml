@@ -1,0 +1,9 @@
+<!--components/login_page/login_page.wxml-->
+<view class="login_container">
+  <view class="login_border">
+    <view class="login_welcome">欢迎登录积分商城</view>
+    <input class="login_user" placeholder="用户名" bindinput="inputuser" value="{{username}}"/>
+    <input class="login_pass" placeholder="密码" bindinput="inputpass" value="{{password}}"/>
+    <button class="login_btn" bindtap="login">登录</button>
+  </view>
+</view>

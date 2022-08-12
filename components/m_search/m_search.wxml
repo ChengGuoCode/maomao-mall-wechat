@@ -1,0 +1,10 @@
+<!--components/search.wxml-->
+<view class="input_search_bar">
+  <view class="input_search_bar_frame clearfix">
+    <icon class="input_search_bar_icon" type="search" size="20"></icon>
+    <input class="input_search_bar_input" type="text" maxlength="15" placeholder="{{searchText}}" value="{{inputVal}}" bindinput="inputTyping"/>
+    <view class="input_search_bar_clear" wx:if="{{inputVal.length > 0}}">
+      <icon type="clear" size="20" bindtap="clearInput"></icon>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,26 @@
+<!--components/cart_group/cart_group.wxml-->
+<view class="cart_group_store">
+  <view class="clearfix">
+    <label class="fa fa-square-o float_left icon_cart_store_choose"></label>
+    <label class="fa fa-th-large float_left icon_cart_store"></label>
+    <view class="float_left cart_store_name">{{storeGoods.storeName}} ></view>
+    <view class="float_right label_cart_store_coupon">优惠券</view>
+  </view>
+  <view class="cart_goods" wx:for="{{storeGoods.goodsList}}" wx:for-item="goods" wx:key="skuId">
+    <label class="fa fa-square-o icon_cart_goods_choose"></label>
+    <view class="cart_goods_img"><image class="fill_full" src="{{goods.productImg}}" /></view>
+    <view class="cart_goods_detail">
+      <view class="cart_goods_desc">{{goods.productDesc}}</view>
+      <view class="cart_goods_sku">{{goods.specification}} <label class="fa fa-angle-down"></label></view>
+      <view class="cart_goods_bottom">
+        <view class="cart_goods_sku_price">￥{{(goods.price / 100) * goods.num}}</view>
+        <view class="cart_goods_stepper"> 
+          <text class="cart_goods_num_minus" bindtap="goodsNumMinus" data-skuCode="{{goods.skuCode}}">-</text> 
+          <input class="cart_goods_num" type="number" bindchange="bindManual" data-skuCode="{{goods.skuCode}}" value="{{goods.num}}" /> 
+          <text class="cart_goods_num_plus" bindtap="goodsNumPlus" data-skuCode="{{goods.skuCode}}">+</text>
+        </view> 
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{index !== data.promotionGoodsList.length - 1}}" class="cart_promotion_separator"></view>
+</view>

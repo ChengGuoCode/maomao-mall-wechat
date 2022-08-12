@@ -1,0 +1,16 @@
+<!--pages/task/task.wxml-->
+<view class="task_container">
+  <view class="task_tab">
+    <view class="task_tab_{{selectTab === '0' ? 'active' : 'inactive'}}" bindtap="switchTab" data-selecttab="0">每日任务</view>
+    <view class="task_tab_{{selectTab === '1' ? 'active' : 'inactive'}}" bindtap="switchTab" data-selecttab="1">积分任务</view>
+    <view class="task_content">
+      <view wx:if="{{selectTab === '0'}}">
+        <task_items taskList="{{dailyTask}}"></task_items>
+      </view>
+      <view wx:if="{{selectTab === '1'}}">
+        <task_items taskList="{{pointTask}}"></task_items>
+      </view>
+      <label class="fa fa-plus-circle task_add" bindtap="addTask"></label>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "tabs":"/components/tabs/tabs",
+    "goods_img_text":"/components/goods_img_text/goods_img_text"
+  }
+}

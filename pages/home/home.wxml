@@ -1,0 +1,13 @@
+<view class="home_page_header">
+  <m_search searchText="iphone 13 火热发售中" bind:transferSearch="freshGoodsList">
+  </m_search>
+  <swiper style="height: 120px;" autoplay="{{autopaly}}" interval="{{interval}}" circular="{{circular}}" wx:if="{{imgSrcs.length > 0}}">
+    <swiper-item wx:for="{{imgSrcs}}" wx:key="text">
+      <image class="img_fill" src="{{item.img}}" />
+    </swiper-item>
+  </swiper>
+</view>
+<view class="home_page_container">
+  <tabs tabs="{{tabList}}" isScrollX="true"></tabs>
+  <goods_list goodsList="{{goodsList}}"></goods_list>
+</view>

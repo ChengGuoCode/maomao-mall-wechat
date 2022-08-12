@@ -1,0 +1,7 @@
+/* components/self_icon/self_icon.wxss */
+@import '../../style/fontawesome.wxss';
+@import '../../style/stylesheet.wxss';
+
+.icon_position {
+  display: inline-block;
+}

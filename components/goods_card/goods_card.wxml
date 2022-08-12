@@ -1,0 +1,13 @@
+<!--components/goods_card/goods_card.wxml-->
+<image class="goods_card_img" src="{{data.pic}}" />
+<view class="goods_card_text">
+  <view class="goods_card_desc">{{data.alias}}</view>
+  <view class="label_goods_card_0">{{data.label}}</view>
+  <view>
+    <view class="goods_card_salePrice">￥{{data.price / 100}}</view>
+    <view class="goods_card_price" wx:if="{{data.salePrice !== undefine && data.salePrice < data.price}}">￥{{data.price / 100}}</view>
+    <view class="goods_card_cart" bindtap="addCart" data-sku="{{data.skuList}}">
+      +
+    </view>
+  </view>
+</view>

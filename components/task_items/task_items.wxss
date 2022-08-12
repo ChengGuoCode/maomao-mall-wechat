@@ -1,0 +1,50 @@
+/* components/task_items/task_items.wxss */
+.task_item {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 5% 0 0 5%;
+  height: 22px;
+  background: white;
+  border-radius: 10rpx;
+  box-shadow: 5px 5px 5px grey;
+  font-size: 12px;
+}
+
+.task_item_name {
+  margin-left: 5px;
+  padding: 2px;
+}
+
+.task_item_condition_desc {
+  font-size: 10px;
+  padding: 2px;
+}
+
+.task_item_point {
+  position: absolute;
+  left: 170px;
+  padding: 2px;
+}
+
+.task_item_progress {
+  position: absolute;
+  left: 215px;
+  padding: 2px;
+}
+
+.task_item_edit {
+  position: absolute;
+  left: 265px;
+  background-color: lightblue;
+  border-radius: 3px;
+  margin-top: 1px;
+  padding: 2px;
+}
+.task_item_complete {
+  position: absolute;
+  left: 255px;
+  background-color: lightgrey;
+  margin-top: 1px;
+  padding: 2px;
+}

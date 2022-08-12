@@ -1,0 +1,39 @@
+/* components/cart_bar/cart_bar.wxss */
+@import '../../style/fontawesome.wxss';
+@import '../../style/stylesheet.wxss';
+.cart_bar {
+  display: flex;
+  align-items: center;
+}
+.icon_cart_bar_choose {
+  flex-grow: 2;
+  text-align: right;
+}
+.cart_select_all {
+  font-size: 10px;
+  flex-grow: 2;
+  text-align: center;
+}
+.cart_cash_total {
+  font-size: 12px;
+  flex-grow: 2;
+  font-weight: bold;
+  text-align: right;
+}
+.cart_cash {
+  font-size: 12px;
+  flex-grow: 14;
+  color: red;
+  text-align: left;
+}
+.settlement_button {
+  font-size: 12px;
+  background-color: rgb(250, 52, 52);
+  padding: 8px;
+  border-radius: 15px;
+  flex-grow: 3;
+  text-align: center;
+}
+.fill_holder {
+  flex-grow: 1;
+}

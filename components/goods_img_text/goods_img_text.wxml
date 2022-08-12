@@ -1,0 +1,15 @@
+<!--components/goods_img_text/goods_img_text.wxml-->
+<view class="img_text_container">
+  <view class="img_text_item" wx:for="{{imgTextData}}" wx:key="id">
+    <image mode="widthFix" class="img_text_img" src="{{item.picture}}" />
+    <text class="img_text_title">{{item.title}}</text>
+    <view class="img_text_footer">
+      <view class="img_text_portrait">
+        <image src="{{item.portraitUrl}}"></image>
+      </view>
+      <text class="img_text_username">{{item.username}}</text>
+      <label class="fa fa-thumbs-o-up img_text_like"></label>
+      <text class="img_text_like_num">{{item.likeNum}}</text>
+    </view>
+  </view>
+</view>

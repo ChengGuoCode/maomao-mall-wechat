@@ -1,0 +1,8 @@
+<!--components/tabs/tabs.wxml-->
+<view class="tabs_view">
+  <scroll-view class="scroll_view_x" scroll-x="{{isScrollX}}">
+    <view class="tab_item_{{currentIndex === item.key ? 'active' : 'inactive'}}" wx:for="{{tabs}}" wx:key="key"  bindtap="chooseIndex" data-tab="{{item.key}}">
+      {{item.text}}
+    </view>
+  </scroll-view>
+</view>

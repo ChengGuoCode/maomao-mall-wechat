@@ -1,0 +1,14 @@
+/* pages/cart/cart.wxss */
+.cart_store {
+  padding: 0px 8px;
+}
+.empty_space {
+  height: 50px;
+}
+.cart_bar {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+  border-top: lightgray;
+}

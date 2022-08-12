@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cart_group": "/components/cart_group/cart_group",
+    "cart_bar": "/components/cart_bar/cart_bar"
+  }
+}
